@@ -8,8 +8,8 @@
     <style>
         * {margin: 0; padding: 0; text-decoration: none;}
         li { list-style-type: none; transform: fixed;}
-        header {height: 100px; margin: 0 auto; display: flex;
-        background-color: rgb(243, 231, 231)}
+        header {width: 1500px; height: 100px; margin: 0 auto; display: flex;
+        }
         #logo {width: 200px; height: 100px; display: flex; justify-content: center; margin-left: 200px;
         align-items: center; font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
         #logo a {text-decoration: none; font-size: xx-large; color: brown; }
@@ -18,12 +18,17 @@
         margin-top: 25px; border-radius: 25px; }
         #search1 {width: 50px; height: 50px; display: flex; justify-content: center;
         align-items: center; font-size: x-large; color: brown;}
-        #search2 {width: 400px; height: 50px; border: none; text-align: center; border-radius: 15px; 
-        color: brown; opacity: 0.2;}
+        #search2 {width: 400px; height: 50px; border-top: 0; border-right: 0; border-bottom: 0; 
+        border-left: 70%; text-align: center; border-color: pink; color: brown; opacity: 0.2;}
         #topmenu{right: 0; padding-right: 20px;}
         #topmenu ul{margin-top: 50px;}
         #topmenu ul li{ display: inline-block; margin-left: 25px;}
         #topmenu ul li a {color: brown; font-size: small; font-weight: 800;}
+
+        main {width: 1500px; height:50px; margin: 0 auto; border-radius: 25px; background-color: rgb(243, 231, 231)}
+        #mainmenu{display: flex; justify-content: center; align-items: center;}
+        #mainmenu li a {font-size: larger; color: brown; font-weight: bold;}
+        #mainmenu li {display:inline-block; margin-left: 100px; margin-top: 10px;}
 
     </style>
 </head>
@@ -31,7 +36,7 @@
 <body>
     <header>
         <div id="logo">
-            <a href="#"><img id = "logoimg" src="/images (7).jpg"></a>
+            <a href="#"><img id = "logoimg" src="/images (2).jpg"></a>
             <a href="#">C-Book</a>
         </div>
 
@@ -45,9 +50,26 @@
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">고객센터</a></li>
+                <li><a href="#">기업소개</a></li>
             </ul>
         </div>
     </header>
+
+    <main>
+
+        <ul id = "mainmenu">
+            <li><a href="#">My Library</a></li>
+            <li><a href="#">Best Seller</a></li>
+            <li><a href="#">New Book</a></li>
+            <li><a href="#">eBook</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Write</a></li>
+            <li><a href="#">Review</a></li>
+        </ul>
+
+        <br><br>
+        <hr color="pink">
+    </main>
 </body>
 
 </html>

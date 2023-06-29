@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    *  {margin: 0; padding: 0; text-decoration: none;}
+        li { list-style-type: none; transform: fixed;}
+        header {width: 1500px; height: 100px; margin: 0 auto; display: flex;
+        }
+        #logo {width: 200px; height: 100px; display: flex; justify-content: center; margin-left: 200px;
+        align-items: center; font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        #logo a {text-decoration: none; font-size: xx-large; color: brown; }
+        #logoimg {width: 70px; height: 70px; margin-left: 5px; }
+        #search {width: 500px; height: 50px; margin: 0 auto; display: flex; border: 2px solid pink; 
+        margin-top: 25px; border-radius: 25px; }
+        #search1 {width: 50px; height: 50px; display: flex; justify-content: center;
+        align-items: center; font-size: x-large; color: brown;}
+        #search2 {width: 400px; height: 50px; border-top: 0; border-right: 0; border-bottom: 0; 
+        border-left: 70%; text-align: center; border-color: pink; color: brown; opacity: 0.2;}
+        #topmenu{right: 0; padding-right: 20px;}
+        #topmenu ul{margin-top: 50px;}
+        #topmenu ul li{ display: inline-block; margin-left: 25px;}
+        #topmenu ul li a {color: brown; font-size: small; font-weight: 800;}
+
+        .menu { width: 1500px; overflow: hidden; margin: 50px auto; }
+        .menu>li { width: 16.6%; float: left; text-align: center; line-height: 40px; 
+        background-color: pink; border-radius: 25px;}
+        .menu a {color: white;}
+        .submenu>li {line-height: 50px; background-color: rgb(235, 109, 109) }
+        .submenu {height: 0;  overflow: hidden; }
+        .menu >li:hover {background-color: brown; transition: 0.5s;}
+        .menu >li:hover .submenu {height: 250px; transition: 1s; visibility: visible;}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div id="logo">
+            <a href="#"><img id = "logoimg" src="./images (2).jpg"></a>
+            <a href="#">C-Book</a>
+        </div>
+
+        <div id="search">
+            <a href="#"><div id = "search1">C</div></a>
+            <input id = "search2" type="text" placeholder="SEARCH">
+        </div>
+
+        <div id="topmenu">
+            <ul>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">기업소개</a></li>
+            </ul>
+        </div>
+    </header>
+
+<main>
+
+    <ul class = "menu">
+        <li><a href="#">Book</a>
+            <ul class ="submenu">
+                <li><a href="#">All</a></li>
+                <li><a href="#">국내도서</a></li>
+                <li><a href="#">해외도서</a></li>
+                <li><a href="#">신간도서</a></li>
+                <li><a href="#">추천도서</a></li>
+            </ul>
+        
+        </li> 
+
+        <li><a href="#">Best Seller</a>
+            <ul class ="submenu">
+                <li><a href="#">현재 베스트 셀러</a></li>
+                <li><a href="#">주간 베스트 셀러</a></li>
+                <li><a href="#">월간 베스트 셀러</a></li>
+                <li><a href="#">연간 베스트 셀러</a></li>
+                <li><a href="#">추천 베스트 셀러</a></li>
+            </ul>
+        
+        </li> 
+
+        <li><a href="#">My Library</a>
+            <ul class ="submenu">
+                <li><a href="#">내 서재</a></li>
+                <li><a href="#">서재관리</a></li>
+                <li><a href="#">서재추가</a></li>
+                <li><a href="#">서재공유</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        
+        </li>  
+
+        <li><a href="#">e-Book</a>
+            <ul class ="submenu">
+                <li><a href="#">All (e-book)</a></li>
+                <li><a href="#">신간 (e-book)</a></li>
+                <li><a href="#">추천 (e-book)</a></li>
+                <li><a href="#">인기 (e-book)</a></li>
+                <li><a href="#">전자책 지필하기</a></li>
+            </ul>
+        
+        </li> 
+
+        <li><a href="#">Review</a>
+            <ul class ="submenu">
+                <li><a href="#">한줄평가</a></li>
+                <li><a href="#">독후감 작성</a></li>
+                <li><a href="#">공유하기</a></li>
+                <li><a href="#">이 책어때?</a></li>
+                <li><a href="#">작가에게 쓰기</a></li>
+            </ul>
+        
+        </li>  
+
+        <li><a href="#">Event</a>
+            <ul class = "submenu">
+                <li><a href="#">C-Event</a></li>
+                <li><a href="#">인기 이벤트</a></li>
+                <li><a href="#">작가님 이벤트</a></li>
+                <li><a href="#">굿즈</a></li>
+                <li><a href="#">플레이스 마켓</a></li>
+            </ul>
+        </li>
+    </ul>
+    <hr color="pink">
+</main>
+
+</body>
+</html>

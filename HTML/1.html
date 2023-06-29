@@ -20,23 +20,26 @@
         align-items: center; font-size: x-large; color: brown;}
         #search2 {width: 400px; height: 50px; border-top: 0; border-right: 0; border-bottom: 0; 
         border-left: 70%; text-align: center; border-color: pink; color: brown; opacity: 0.2;}
+       
         #topmenu{right: 0; padding-right: 20px;}
         #topmenu ul{margin-top: 50px;}
         #topmenu ul li{ display: inline-block; margin-left: 25px;}
         #topmenu ul li a {color: brown; font-size: small; font-weight: 800;}
 
         main {width: 1500px; height:50px; margin: 0 auto; border-radius: 25px; background-color: rgb(243, 231, 231)}
-        #mainmenu{display: flex; justify-content: center; align-items: center;}
+        #mainmenu{ display:flex; justify-content: center; align-items: center;}
         #mainmenu li a {font-size: larger; color: brown; font-weight: bold;}
         #mainmenu li {display:inline-block; margin-left: 100px; margin-top: 10px;}
 
+        #submenu li {height: 0; overflow: hidden;}
+        
     </style>
 </head>
 
 <body>
     <header>
         <div id="logo">
-            <a href="#"><img id = "logoimg" src="/images (2).jpg"></a>
+            <a href="#"><img id = "logoimg" src="./images (2).jpg"></a>
             <a href="#">C-Book</a>
         </div>
 
@@ -58,13 +61,65 @@
     <main>
 
         <ul id = "mainmenu">
-            <li><a href="#">My Library</a></li>
-            <li><a href="#">Best Seller</a></li>
-            <li><a href="#">New Book</a></li>
-            <li><a href="#">eBook</a></li>
-            <li><a href="#">Event</a></li>
-            <li><a href="#">Write</a></li>
-            <li><a href="#">Review</a></li>
+            <li><a href="#">My Library</a>
+            <ul id = "submenu">
+                <li><a href="#">내 서재</a></li>
+                <li><a href="#">내 서재 관리</a></li>
+                <li><a href="#">책 추가</a></li>
+            </ul>
+            </li>
+           
+            <li><a href="#">Best Seller</a>
+                <ul id = "submenu">
+                    <li><a href="#">현재 베스트 셀러</a></li>
+                    <li><a href="#">주간 베스트 셀러</a></li>
+                    <li><a href="#">월간 베스트 셀러</a></li>
+                    <li><a href="#">연간 베스트 셀러</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Book</a>
+                <ul id = "submenu">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">New Book</a></li>
+                    <li><a href="#">국내도서</a></li>
+                    <li><a href="#">외국도서</a></li>
+                    <li><a href="#">추천도서</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">eBook</a>
+                <ul id = "submenu">
+                    <li><a href="#">All(e-book)</a></li>
+                    <li><a href="#">New Book(e-book)</a></li>
+                    <li><a href="#">추천(e-book)</a></li>
+                    <li><a href="#">대여</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Write</a>
+                <ul id = "submenu">
+                    <li><a href="#">독후감작성</a></li>
+                    <li><a href="#">책 지필하기</a></li>
+                    <li><a href="#">전자책 지필하기</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Review</a>
+                <ul id = "submenu">
+                    <li><a href="#">한줄평가</a></li>
+                    <li><a href="#">이 책 어떄?</a></li>
+                    <li><a href="#">책 공유하기</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Event</a>
+                <ul id = "submenu">
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">작가님 이벤트</a></li>
+                    <li><a href="#">굿즈</a></li>
+                </ul>
+            </li>
         </ul>
 
         <br><br>
